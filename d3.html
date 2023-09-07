@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="submit"]{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- BASIC TEXT-->
+    <form action="action.php" method="post">
+        <div>
+            <label for="username">Username</label><input type="text" name="checkname" id="username" readonly placeholder="Add username" value="Initial Value">
+        </div>
+        <div>
+            <label for="email">Email</label><input type="email" name="email" id="email" value="test@me" readonly>
+        </div>
+        <div>
+            <label for="password">Password</label><input type="password" name="password" id="password">
+        </div>
+        <div>
+            step
+            <label for="account">Account</label><input type="number" name="account" id="account" >
+        </div>
+        <input type="hidden" name="id" id="id" value="26">
+        <div>
+            <textarea name="comment" id="comment" placeholder="comments" cols="20" row="4" ></textarea>
+        </div>
+        
+        <input type="submit" value="submit">
+    </form>
+    <!-- -->
+    <!--  DATE INPUT   
+    <form action="action.php" method="post">
+        <div>
+            <label for="date">Date</label><input type="date" name="date" id="date" value="2023-09-05">
+        </div>
+        <div>
+            <label for="datetime">DateTime</label><input type="datetime-local" name="datetime" id="datetime" value="2023-09-05 13:40">
+        </div>
+        <div>
+            <label for="month">Month</label><input type="month" name="month" id="month" value="2023-09">
+        </div>
+        <div>
+            <label for="week">Week</label><input type="week" name="week" id="week" value="2023-W45">
+        </div>
+        <div>
+            <label for="time">Time</label><input type="time" name="time" id="time" value="15:30">
+        </div>
+        <input type="submit" value="submit">
+    </form> -->
+
+
+    <!--  BUTTON INPUT   
+    <form action="action.php" method="post">
+        <div>
+            <label for="username">Username</label><input type="text" name="checkname" id="username" placeholder="Add username" value="Initial Value">
+        </div>
+        <div>
+            <label for="email">Email</label><input type="email" name="email" id="email" >
+        </div>
+        <div>
+            <label for="password">Password</label><input type="password" name="password" id="password">
+        </div>     
+        <input type="submit" value="submit">   
+        <input type="button" value="button">
+        <button type="submit">BUTTON</button>
+    </form> -->
+
+    <!-- CHECKBOX & RADIO BOX    
+    <form action="action.php" method="post">
+        <h3>Skills</h3>
+        <input type="checkbox" name="mobile-app"><label for="mobile-app">Mobile Application</label>
+        <input type="checkbox" name="java-dev"><label for="java-dev">Java Dev</label>
+        <input type="checkbox" name="web-dev" ><label for="web-dev">Web Dev</label>
+        <input type="checkbox" name="api-dev" ><label for="api-dev">API Developer</label>
+
+        <h3>Year Level</h3>
+        <input type="radio" name="level" value="1" checked><label for="level-year1">First Year</label>
+        <input type="radio" name="level" value="2"><label for="level-year2">Second Year</label>
+        <input type="radio" name="level" value="3"><label for="level-year3">Third Year</label>
+        <input type="radio" name="level" value="4"><label for="level-year4">Fourth Year</label>
+
+        <input type="submit" value="submit">   
+    </form> -->
+
+    <!-- UPLOAD/COLOR/RANGE SLIDER
+    <form action="action.php" method="post">
+        <div>
+            <input type="file" name="upload" id="upload">
+            <input type="color" name="colorpicker" id="colorpicker" value="#2129c2">
+        </div>
+        <input type="range" name="strength-slider" id="strength-slider" step="10"
+        oninput="rangeSliderChange()">
+        <label for="strength-slider" id="strength-slider-text"></label>
+        <input type="submit" value="submit">
+    </form> -->
+
+
+    <!-- DROPDOWN
+    <form action="action.php" method="post">
+        <select name="nation" id="nation">
+            <option value="ph">Philippines</option>
+            <option value="id">Indonesia</option>
+            <option value="ma">Malaysia</option>
+            <option value="sg">Singapore</option>
+            <option value="bn">Brunei</option>
+            <option value="la">Laos</option>
+            <option value="vn">Vietnam</option>
+            <option value="cm">Cambodia</option>
+            <option value="th">Thailand</option>
+            <option value="tl">East Timor</option>
+            <option value="bu">Burma</option>
+            
+        </select>
+        <input type="submit" value="submit">
+    </form> -->
+    
+</body>
+<script>
+    function rangeSliderChange(){
+        const rangeSlider = document.getElementById("strength-slider");
+        document.getElementById("strength-slider-text").textContent = rangeSlider.value;
+        
+    }
+</script>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Table with form</title>
+</head>
+<body>
+    <header>
+        <h1>&emsp;&emsp;&emsp;&emsp;&emsp;Order Form</h1>
+    </header>
+        
+    <main>
+        <section id="contact-info">
+            <h3>Contact Info</h3>
+            <div>
+                <label for="first-name"><sup>*</sup>First Name</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="last-name"><sup>*</sup>Last Name</label>
+            </div>
+            <div>
+                <input type="text" name="first-name" id="first-name" required>&emsp;<input type="text" name="last-name" id="last-name" required>
+            </div>
+            <div>
+                <label for="contact-no">Contact No</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="email-add"><sup>*</sup>Email Address</label>
+            </div>
+            <div>
+                <input type="number" name="contact-no" id="contact-no">&emsp;<input type="email" name="email-add" id="email-add" required>
+            </div>
+            <div>
+                <label for="street">Street Address</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="brgy"><sup>*</sup>Barangay No</label>
+            </div>
+            <div>
+                <input type="text" name="street" id="street">&emsp;<input type="text" name="brgy" id="brgy" required>
+            </div>
+            <div>
+                <label for="district">District</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="city">City</label>
+            </div>
+            <div>
+                <input type="text" name="district" id="district">&emsp;<input type="text" name="city" id="city">
+            </div>
+            <div>
+                <label for="province"><sup>*</sup>Province</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="country"><sup>*</sup>Country</label>
+            </div>
+            <div>
+                <select type="text" name="province" id="province">
+                    <option value="mm">Metro Manila</option>
+                    <option value="ca" selected>Cavite</option>
+                    <option value="la">Laguna</option>
+                    <option value="ba">Batangas</option>
+                    <option value="rz">Rizal</option>
+                    <option value="qz">Quezon</option>
+                    <option value="mi">Mindoro</option>
+                    <option value="ma">Marinduque</option>
+                    <option value="ro">Romblon</option>
+                    <option value="pa">Palawan</option>
+                </select>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="text" name="country" id="country" value="Philippines" readonly>
+            </div>
+        </section>
+        <section id="order-form">
+            <h3>Order Form</h3>
+            <div>
+                <label for="delivery-date"><sup>*</sup>Delivery Date</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="last-name"><sup>*</sup>Last Name</label>
+            </div>
+            <div>
+                <input type="date" name="delivery-date" id="delivery-date" required>&emsp;&emsp;<input type="text" name="last-name" id="last-name" required>
+            </div>
+            <div>
+                <label for="contact-no">Contact No</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="email-add"><sup>*</sup>Email Address</label>
+            </div>
+            <div>
+                <input type="number" name="contact-no" id="contact-no">&emsp;<input type="email" name="email-add" id="email-add" required>
+            </div>
+            <div>
+                <label for="street">Street Address</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="brgy"><sup>*</sup>Barangay No</label>
+            </div>
+            <div>
+                <input type="text" name="street" id="street">&emsp;<input type="text" name="brgy" id="brgy" required>
+            </div>
+            <div>
+                <label for="district">District</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="city">City</label>
+            </div>
+            <div>
+                <input type="text" name="district" id="district">&emsp;<input type="text" name="city" id="city">
+            </div>
+            <div>
+                <label for="province"><sup>*</sup>Province</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="country"><sup>*</sup>Country</label>
+            </div>
+            <div>
+                <select type="text" name="province" id="province">
+                    <option value="mm">Metro Manila</option>
+                    <option value="ca" selected>Cavite</option>
+                    <option value="la">Laguna</option>
+                    <option value="ba">Batangas</option>
+                    <option value="rz">Rizal</option>
+                    <option value="qz">Quezon</option>
+                    <option value="mi">Mindoro</option>
+                    <option value="ma">Marinduque</option>
+                    <option value="ro">Romblon</option>
+                    <option value="pa">Palawan</option>
+                </select>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="text" name="country" id="country" value="Philippines" readonly>
+            </div>
+            <div>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="submit" value="Submit">&emsp;<input type="reset" value="Clear">
+            </div>
+        </section>
+        <section id="ticket-form"></section>
+    </main>
+</body>
+</html>

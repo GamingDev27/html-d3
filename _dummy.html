@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta name='description' content="">
+        <meta name="keywords" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <title></title>
+        
+        <script>
+            window.onload = (event) => {
+                
+                
+            }          
+            
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("title-page").textContent = "Welcome to Javascript";
+                // let minDate = document.getElementById("selectedDate2").setAttribute("min","2023-08-01");
+                // let maxDate = document.getElementById("selectedDate2").setAttribute("max","2023-08-31");
+
+               
+                const today = new Date();
+                const year = today.getFullYear();
+                const month = (today.getMonth() + 1).toString().padStart(2, '0');
+                const day = today.getDate().toString().padStart(2, '0');
+                const todayDate = `${year}-${month}-${day}`;
+                
+                let valDate = document.getElementById("selectedDate").setAttribute("value",todayDate);
+                
+                
+                
+            });
+
+           
+        </script> 
+        <style>
+            .button-blue {
+                background-color: #2196F3;
+                color: whitesmoke;
+                border: none;
+                border-radius: 2px;
+            }
+            .button-white {
+                background-color: #E3F2FD;
+                color: #0D47A1;
+                border: none;
+                border-radius: 2px;
+                box-shadow: 1px 1px rgb(1 1 1 /0.7);
+            }
+            .button-white:active {
+                background-color: #c8e1f3;
+                color: #0D47A1;
+                transform: translateY(1px);
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1 id="title-page"></h1>
+        <!-- <button type="button" class="button-blue" id="btn-signin">Sign In</button>
+        <button type="button" class="button-blue" id="btn-signup">Sign Up</button>
+        <button type="button" class="button-blue" id="btn-product">Products</button>
+        <button type="submit" class="button-white" value="Exit"><strong>Exit</strong></button><br><br> -->
+        
+        <form action="action.php">
+            <div>
+                <label for="username">Username: </label><input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="Date">Date: </label><input type="date" name="date" id="date" value="2023-09-05">
+            </div>
+            
+
+        </form>
+
+        <form action="action.php">
+            <input type="password" />
+            <input type="date" name="" id="" value="2023-08-07" min="2023-08-07" max="2023-08-11">
+            <input type="checkbox" name="science" id=""><label for="science">science</label>
+            <input type="checkbox" name="history" id=""><label for="history">history</label>
+            <input type="checkbox" name="math" id=""><label for="math">math</label>
+            <br>
+            <input type="radio" name="radio-set1" id="" value="science"><label for="science">science</label>
+            <input type="radio" name="radio-set1" id="" value="history"><label for="history">history</label>
+            <input type="radio" name="radio-set1" id="" value="math"><label for="math">math</label>
+            
+            <input type="file" name="file-upload" id="file-upload" accept=".docx,.xlsx">
+            <input type="submit" value="Exit">
+            
+            
+
+        </form>
+        
+        <!--
+        <form action="submit.php" method="POST">
+            <label for="fullname">Fullname:</label><input type="text" name="fullname" id=""><br><br> 
+            <label for="username">Username:</label><input type="text" name="username" id=""><br><br>
+            <label for="email2">Email:</label><input type="email" name="email2" id=""><br><br>
+            <label for="password">Password:</label><input type="password" name="password" id=""><br><br>
+            <input type="hidden" value="admin" name="usertype">
+            <input type="date" id="selectedDate" >
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            <input type="reset" value="Reset">
+            
+            <div>
+                <h3>Skills</h3>
+                <input type="checkbox" name="mobile-app" id="mobile-app" checked><label for="mobile-app">Mobile Application</label>
+                <input type="checkbox" name="java-dev" id="java-dev"><label for="java-dev">Java Dev</label>
+                <input type="checkbox" name="web-dev" id="web-dev"><label for="web-dev">Web Dev</label>
+                <input type="checkbox" name="api-dev" id="api-dev"><label for="api-dev">API Developer</label>
+            </div>
+            
+
+            <h3>Year Level</h3>
+            <input type="radio" name="level" id="level-year1" value="level-year1" checked><label for="level-year1">First Year</label>
+            <input type="radio" name="level" id="level-year2" value="level-year2"><label for="level-year2">Second Year</label>  
+            <input type="radio" name="level" id="level-year3" value="level-year3"><label for="level-year3">Third Year</label>   
+            <input type="radio" name="level" id="level-year4" value="level-year4"><label for="level-year4">Fourth Year</label   ><br><br><br>
+            
+            <input type="file" name="" id="" accept=".docx,.xlsx">    
+            <input type="color" value="#2129c2" >
+            <input type="range" name="strength-slider" id="strength-slider" step="10"
+            oninput="rangeSliderChange()">
+            <label for="strength-slider" id="strength-slider-text"></label>
+
+            <select name="year-level" id="year-level">
+                <option value="">--Select Year Level--</option>
+                <optgroup label="Undergrad">
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3" selected>Third Year</option>
+                    <option value="4">Fourth Year</option>
+                </optgroup>
+                <optgroup label="SHS">
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                </optgroup>
+            </select>
+            
+            <input type="submit" value="button">
+
+
+        </form>
+        -->    
+
+
+        
+        <script>
+            function rangeSliderChange(){
+                const rangeSlider = document.getElementById("strength-slider");
+                document.getElementById("strength-slider-text").textContent = rangeSlider.value;
+                
+            }
+        </script>
+    </body>
+
+
+</html>
